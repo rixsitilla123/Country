@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-teal-500">
+    <form class="w-[550px] bg-white p-5 rounded-[10px] mx-auto mt-[50px] login-form">
+        <h2 class="font-bold text-[22px] text-center mb-3">
+            Welcome Country
+        </h2>
+        <div class="flex flex-col space-y-5">
+            <label class="flex flex-col space-y-2">
+                <span class="">Enter your login</span>
+                <input type="text" class="rounded-[10px] p-2 border-[2px] border-teal-500" required autocomplete="off" placeholder="Enter your login">
+            </label>
+            <label class="flex flex-col space-y-2">
+                <span class="">Enter password</span>
+                <input type="password" class="rounded-[10px] p-2 border-[2px] border-teal-500" required autocomplete="off" placeholder="Enter password">
+            </label>
+        </div>
+        <button class="w-full p-2 bg-teal-500 text-white rounded-[10px] inline-block text-[18px] font-semibold mt-10">Submit</button>
+    </form>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+            }   
+        }
+    }
+</script>
+<script src="./js/login.js"></script>
+</html>

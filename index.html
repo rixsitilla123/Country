@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="">
+    <header class="p-5 bg-teal-500">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="font-bold text-[25px]">Countries</h1>
+            <div class="">
+                <input class="p-2 rounded-[10px] w-[200px]" placeholder="searching name">
+                <input class="p-2 rounded-[10px] w-[200px]" placeholder="searching capital">
+                <select class="p-2 rounded-[10px] w-[200px]">
+                    <option value="all">All</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main>
+        <ul class="country-list flex flex-wrap justify-between"></ul>
+    </main>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+            }   
+        }
+    }
+</script>
+<script src="./js/app.js"></script>
+</html>
